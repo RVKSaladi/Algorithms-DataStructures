@@ -96,8 +96,6 @@ public class CaesarCipher {
 
 class ApplicationTest {
     public static void main(String args[]) {
-        System.out.println("Praise the Lord Jesus!");
-
         CaesarCipher caesarCipher = new CaesarCipher(3);
         System.out.println("Encryption code = " + new String(caesarCipher.encoder));
         System.out.println("Encryption code = " + new String(caesarCipher.decoder));
