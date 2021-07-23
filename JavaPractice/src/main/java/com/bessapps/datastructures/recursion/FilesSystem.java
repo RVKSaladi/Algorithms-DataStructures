@@ -4,8 +4,6 @@ import java.io.File;
 
 public class FilesSystem {
     public static void main(String args[]) {
-        System.out.println("Praise the Lord Jesus!!");
-
         System.out.println(fileUsage(new File("./")));
     }
 
