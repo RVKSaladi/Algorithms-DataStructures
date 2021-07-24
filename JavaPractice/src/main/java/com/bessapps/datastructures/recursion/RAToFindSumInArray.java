@@ -1,6 +1,9 @@
 package com.bessapps.datastructures.recursion;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class RAToFindSumInArray {
 
@@ -66,6 +69,10 @@ public class RAToFindSumInArray {
         int[] arr = {4, 2, 3, 4, 19, 50, 27, 77};
         boolean status = solution1(arr, 2, 1, 0);
         System.out.println("solution1: " + status);
+
+        boolean a = checkSumUsingHashMap(arr);
+        System.out.println(a);
+
     }
 
     public static boolean check(int[] array, int index) {
@@ -102,5 +109,28 @@ public class RAToFindSumInArray {
                 return false;
             }
         }
+    }
+
+    // Find the sum using HashMap
+    // Time complexity: O(
+    public static boolean checkSumUsingHashMap(int [] array) {
+        HashMap<Integer, Integer> hash_map = new HashMap<>();
+        for(int i = 0; i < array.length; i++) {
+            hash_map.put(i, array[i]);
+        }
+
+        Iterator iter = hash_map.entrySet().iterator();
+        while(iter.hasNext()) {
+            Map.Entry x = (Map.Entry)iter.next();
+            System.out.print("(" + x.getKey() + "-" + x.getValue() + ") ");
+        }
+
+        for(int i = 2; i < array.length; i++) {
+            if(hash_map.containsKey(array[i]-array[i-1])) {
+                
+            }
+        }
+
+        return true;
     }
 }
