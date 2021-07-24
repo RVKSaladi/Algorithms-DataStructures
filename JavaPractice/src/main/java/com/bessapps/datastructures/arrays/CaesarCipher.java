@@ -96,10 +96,6 @@ public class CaesarCipher {
 
 class ApplicationTest {
     public static void main(String args[]) {
-<<<<<<< HEAD
-
-=======
->>>>>>> a6eb86d9f174c559aa9901beb8ea498a9413257c
         CaesarCipher caesarCipher = new CaesarCipher(3);
         System.out.println("Encryption code = " + new String(caesarCipher.encoder));
         System.out.println("Encryption code = " + new String(caesarCipher.decoder));
