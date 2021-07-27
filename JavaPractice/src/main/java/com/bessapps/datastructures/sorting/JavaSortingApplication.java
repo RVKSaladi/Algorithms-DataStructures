@@ -60,6 +60,9 @@ class MySort {
         System.out.println();
     }
 
+    // Linear search
+    // Time complexity O(nlogn)
+    // Space Complexity O(n)
     public void linearSearch(int val) {
         int pos = 0;
         for(int i = 0; i < arraySize; i++) {
@@ -170,6 +173,7 @@ class MySort {
 
     }
 
+    // Merge Sort
     public int[] mergeSortHelper(int[] array) {
         if(array.length <= 1) return array;
         int midPoint = array.length/2;
