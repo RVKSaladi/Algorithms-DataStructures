@@ -4,14 +4,12 @@ import jdk.swing.interop.SwingInterOpUtils;
 
 public class SubStringProblemOne {
 
+    // Checks if the Pattern is matching or not
+    // Time complexity O(log n) n is the size of the pattern string..
+    // Space complexity O(1) .. constant..
     public static boolean checkIfMatches(String orig, String pattern) {
         //Extract data from the pattern
-        StringBuilder sb1 = new StringBuilder();
-
         String[] tempArray = pattern.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
-
-        System.out.println("Total size of the orig string: " + orig.length());
-
         int temp = 0;
         for(String s: tempArray) {
             if(!s.matches("[/0-9]")) {
