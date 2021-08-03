@@ -1,7 +1,5 @@
 package com.bessapps.datastructures.strings;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class SubStringProblemOne {
 
     // Checks if the Pattern is matching or not

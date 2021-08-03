@@ -14,7 +14,7 @@ class Node {
     }
 }
 
-public class AVLTree {
+public class MyAVLTree {
     private Node root;
 
     public void updateHeight(Node n) {
@@ -94,7 +94,7 @@ public class AVLTree {
 
 class AVLTreeApplication {
     public static void main(String args[]) {
-        AVLTree avlTree = new AVLTree();
+        MyAVLTree avlTree = new MyAVLTree();
 
         avlTree.insert(30);
         avlTree.insert(10);
